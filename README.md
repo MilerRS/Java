@@ -2,7 +2,7 @@
 Programare Avansata
 
 
-#Lab3:
+$Lab3:
 
 -Compulsory + Optional finalizat cu toate cerintele
 
@@ -19,7 +19,7 @@ Se creaza o lista de iteme acceptate in sac si se adauga in lista iteme dupa gre
 Se seteaza itemele din sac dupa lista itemelor acceptate.
 
 
-#Lab4:
+$Lab4:
 
 -Compulsory
 

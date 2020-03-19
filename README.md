@@ -23,7 +23,39 @@ Se seteaza itemele din sac dupa lista itemelor acceptate.
 
 -Compulsory
 
-Contine 4 clasa Resident,Hospital,Main,Problem
+Contine 4 clase Resident,Hospital,Main,Problem
 
 Clasa Problema contine multiple metoda pentru a instantia residentii si spitalele si pentru a creea mape atat pentru residenti si preferintelor cat si pentru spitale si preferintele lor, dar si o metoda de filtrare dupa cerintele problemei.
 Clasa Main creaza un obiect problema, o lista pentru residenti, un treeset pentru spitale, cele 2 mape pentru preferinte, afiseaza mapele si apeleaza metoda obiectului problema pentru afisarea dupa filtre.
+
+**Lab5:**
+
+-Compulsory
+Contine 5 clase Document,Catalog, CatalogUtil,InvalidCatalogException,Main
+
+Document:
+variabilele id,nume,location pentru path sau url, si o mapa pentru taguri
++
+Gettere si Settere pentru fiecare variabila 
++
+o metoda de addtag pentru a adauga tagurile si valorile acestora in mapa;
+
+Catalog:
+variabilele name, path, lista de documente incluse in catalog;
++
+Gettere si Settere pentru fiecare variabila 
++
+o metoda de add pentru a adauga un document in catalog;
++
+o metoda findById care afiseaza un document dupa id acestuia, metoda foloseste Stream API pentru filtrare si afisare.
+
+CatalogUtil:
+metoda save:   salveaza un catalog la adresa acestuia, foloseste IOException pentru erori.
+metoda load:  incarca un catalog de la o adresa data, foloseste InvalidCatalogException, IOException, ClassNotFoundException pentru erori.
+metoda view: creeaza un obiect desktop si se foloseste de metoda browse pentru a deschide documentul selectat.
+
+InvalidCatalogException:
+este o exceptie personalizata, arunca o exceptie atunci cand este selectat alt fisier fata de cel cautat din catalog.
+
+Main:
+contine 2 metode prin care se salveaza, respectiv incarca si se deschide un catalog si metoda main prin care se apeleaza acestea.

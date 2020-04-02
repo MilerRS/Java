@@ -4,6 +4,7 @@ Programare Avansata
 **Lab6:**
 
 Nou adaugat:
+
 -Buton reset functional in ControlPanel
 -File chooser pentru functiile save si load functionale exact cum cere problema.
 -Modificat ConfigPanel astfel incat contine 2 ComboBox: una pentru forma si cealalta pentru culoare si am implementat 2 ActionListener pentru cele 2 combori pentru desena dupa forma si culoarea din ui 

@@ -8,8 +8,11 @@ Compulsory:
 
 -Clasa Token ce contine o variabila value(aceasta o sa fie cuprinsa intre 1 si 26 cu 2 tokenuri speciale 0 care vor fi jokeri)
 -Clasa Board ce contine o lista de tokenuri si 2 metode una pentru a adauga tokenuri in board si cealalta pentru a extrage tokenurile folosita de playeri;
+
 -Clasa Game ce contine un board si o lista de playeri si metode pentru a verifica daca boardul este liber pentru a da start la joc pe thread si pentru a instantia boardul cu tokenuri;
+
 -Clasa Main ce contine crearea unui game si adaugarea a 2 playeri la acesta, inclusiv startul jocului;
+
 -Clasa Playeri ce contine o variabila pentru nume si una pentru jocul din care face parte, si o metoda taketoken prin care playerii extrag un token random din tabla;
 
 

@@ -2,11 +2,16 @@
 Programare Avansata
 
 **Lab6:**
+Nou adaugat:
+-Buton reset functional in ControlPanel
+-File chooser pentru functiile save si load functionale exact cum cere problema.
+-Modificat ConfigPanel astfel incat contine 2 ComboBox: una pentru forma si cealalta pentru culoare si am implementat 2 ActionListener pentru cele 2 combori pentru desena dupa forma si culoarea din ui 
+
 
 -Compulsory: Am creat clase pentru mainframe, configpanel,controlpanel,drawingpanel si pentru polygon si nodeform
 Mainframe creaza panel pentru config control si draw si le adauga in frame
 Configpanel instantiaza nr de sides si culorile folosite
-Controlpanel contine 4 butoane functionabile(mai putin reset, nu am avut timp sa o fac) de save, load si exit
+Controlpanel contine 4 butoane functionabile de save, load si exit
 Drawingpanel seteaza radius si color random (radius intre 1 si 30 iar culorile oricare)  iar sides le preia din UI, si deseneaza cu prin apelul clasei poligon cu parametrii specificati.
 Am folosit un mouselistener pentru a specifica coordonatele exacte pentru a desena
 

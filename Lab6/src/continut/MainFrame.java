@@ -24,7 +24,7 @@ public class MainFrame extends JFrame {
         add(configPanel, BorderLayout.NORTH);//this is BorderLayout.NORTH
         add(controlPanel, BorderLayout.SOUTH);//this is BorderLayout.SOUTH
         pack();
-        setSize(600, 600);
+        setSize(820, 700);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);

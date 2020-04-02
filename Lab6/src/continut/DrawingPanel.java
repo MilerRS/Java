@@ -12,7 +12,6 @@ public class DrawingPanel extends JPanel {
     final static int W = 800, H = 600;
     BufferedImage image; //the offscreen image
     Graphics2D graphics; //the "tools" needed to draw in the image
-
     public DrawingPanel(MainFrame frame) {
         this.frame = frame;
         createOffscreenImage();
@@ -32,17 +31,15 @@ public class DrawingPanel extends JPanel {
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                drawShape(e.getX(), e.getY());
+                drawShape(e.getX(), e.getY(),frame.configPanel.colors[frame.configPanel.countercolors],frame.configPanel.sides[frame.configPanel.countershapes]);
                 repaint();
             }
         });
     }
 
-    private void drawShape(int x, int y) {
+    private void drawShape(int x, int y,Color color, Integer sides) {
         Random rand = new Random();
         int radius = rand.nextInt(30);
-        int sides = (int) frame.configPanel.sidesField.getValue();;; //get the value from UI (in ConfigPanel)
-        Color color =new Color(rand.nextInt(0xFFFFFF)); //create a transparent random Color.
         graphics.setColor(color);
         graphics.fill(new RegularPolygon(x, y, radius, sides));
     }

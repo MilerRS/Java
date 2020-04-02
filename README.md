@@ -2,6 +2,7 @@
 Programare Avansata
 
 **Lab6:**
+
 Nou adaugat:
 -Buton reset functional in ControlPanel
 -File chooser pentru functiile save si load functionale exact cum cere problema.

@@ -5,7 +5,9 @@ Programare Avansata
 Compulsory:
 -3 package  DAO,MAIN si unul DATABASE
 -DAO contine 2 clase ArtistController si AlbumControler prin care apelam metodele de introducere a datetlor in tabele si a cauta dupa un anumit filtru(nume, respectiv id artist)
+
 -DATABASE contine un singleton class pentru conectarea la database
+
 -MAIN contine clasa care creaza o conexiune cu baza de date creaza tabelele si introduce 5 artisti si 5 albume in tabelele respective.
 
 **Lab7:**

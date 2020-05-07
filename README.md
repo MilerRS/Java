@@ -1,5 +1,17 @@
 # Java
 Programare Avansata
+**Lab10:**
+
+Compulsory:
+-2 proiecte diferite, Client si Server:
+  
+  -Client contine clasa GameClient prin care se conecteaza la server cu ajutorul unei adrese si a unui port: momentan am facut localsi cu portul predefinit. Dupa conectare primeste un mesaj de la server "Aveti 10 secunde pentru a scrie un mesaj" dupa care serverul va conecta alt client si il va deconecta pe cel curent. In timpul celor 10 secunde clientul poate trimite un mesaj la alegere si va primi feedback de la server ca a primit mesajul, poate opri serverul prin comanda "stop" sau sa se deconecteze de la server prin comanda "exit".  
+  
+  -Serverul contine clasele GameServer, ClientThread si Main(aici doar se instantiaza clasa gameserver pentru a porni serverul).
+    •GameServer: creaza un serversocket pentru a permite clientilor conectarea la acesta si asteapta conectarea acestora,serverul permite conectarea mai multor clienti deodata.
+    •ClientThread: clasa ce face conexiunea unui client cu serverul printr-un socket. Dupa conectare acesta trimite un mesaj clientului "10 seconds to send a message" si acest mesaj se va repeta de fiecare data dupa un mesaj primit de la client. Serverul primeste mesaj de la client si trimite inapoi catre acesta "Server received the request.." in cazul in care clientul trimite un mesaj random, "Client connection stoped" daca clientul intrerupe conexiunea cu serverul sau "server stopped" daca clientul trimite mesaj de inchidere a serverului(in acest caz toti clienti vor fi deconectati si serverul inchis);
+    
+    
 **Lab8:**
 
 Compulsory:

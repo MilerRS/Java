@@ -28,7 +28,4 @@ public class GameServer {
             serverSocket.close();
         }
     }
-    public static void main ( String [] args ) throws IOException {
-        GameServer server = new GameServer ();
-    }
 }
